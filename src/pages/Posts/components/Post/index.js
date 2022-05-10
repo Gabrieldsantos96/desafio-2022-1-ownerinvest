@@ -2,7 +2,7 @@ import './styles.css';
 import {useEffect,useState} from 'react';
 import Api from '../../../../services/api';
 
-function Post ({item}) {
+function Post ({item,currentPage}) {
    const [author,setAuthor] = useState();
 const axiosAuthor = async () => {
    const request = await Api.get(`/users/${item.userId}`);
@@ -13,6 +13,10 @@ const axiosAuthor = async () => {
    useEffect(() => {
    axiosAuthor();
    },[])
+
+   useEffect(() => {
+      axiosAuthor();
+      },[currentPage])
 
    return (
       <div className="post">

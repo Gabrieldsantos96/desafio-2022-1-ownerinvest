@@ -21,7 +21,6 @@ function PostsData () {
   const axiosPosts = async () => {
     const request = await Api.get('/todos');
     const { data } = request;
-    console.log(data);
     setPosts(data);
   }
 
@@ -38,8 +37,8 @@ function PostsData () {
       currentPage={currentPage}/>
 
     <div>
-    <div className='posts_title'><h2>Todos os posts</h2></div> 
-      <div className='render_posts'>
+    <div className='content_title'><h2>Todos os posts</h2></div> 
+      <div className='render_data'>
        
         
       {
@@ -48,6 +47,7 @@ function PostsData () {
       <Post 
       key={index}
       item={item}
+      currentPage={currentPage}
       />
 
       ))
