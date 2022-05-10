@@ -1,9 +1,13 @@
 import './styles.css';
-
+import Header from '../../components/Header';
+import UsersData from './components/UsersData';
 
 function Users () {
    return (
-      <div></div>
+      <div className='container'>
+         <Header/>
+         <UsersData/>
+      </div>
    )
 }
 

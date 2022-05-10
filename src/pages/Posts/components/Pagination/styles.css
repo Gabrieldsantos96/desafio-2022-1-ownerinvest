@@ -1,0 +1,32 @@
+.div_pagination {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   width: 100%;
+}
+
+.div_pagination button{
+   color: #FFF;
+   padding: 5px;
+   margin: 5px;
+   cursor: pointer;
+   opacity: 0.8;
+
+   font-weight: 200;
+}
+
+.div_pagination button:hover {
+   color: white;
+   opacity: 0.2;
+}
+
+.selected {
+   box-shadow: 0px 2px 11px rgba(0, 0, 0, 0.5);
+   background-color: #4A4A4A;
+}
+
+.none {
+   border: none;
+   box-shadow: 0px 2px 11px rgba(0, 0, 0, 0.5);
+   background-color: #858585;
+}
