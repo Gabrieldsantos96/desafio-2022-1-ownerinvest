@@ -6,7 +6,7 @@ import Post from '../Post';
 
 function PostsData () {
 
-  const {posts,setPosts,users,setUsers} = useData();
+  const {posts,setPosts,users} = useData();
 
   const [itemsPerPage,setItemsPerPage] = useState(15);
   const [currentPage,setCurrentPage] = useState(0);
@@ -20,17 +20,10 @@ function PostsData () {
   const axiosPosts = async () => {
     const { data } = await Api.get('todos');
     setPosts(data);
-  };
-
-  const axiosAuthor = async () => {
-  const {data } = await Api.get('users');
-  setUsers(data);
-};
- 
+  }; 
 
   useEffect(() => {
   axiosPosts();
-  axiosAuthor();
   },[])
 
    return (

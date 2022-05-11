@@ -1,6 +1,6 @@
 import './styles.css';
 
-function Post ({item,currentPage,users}) {
+function Post ({item,users}) {
 
 const author = users.find((user) => user.id === item.userId);
 
