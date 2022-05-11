@@ -20,13 +20,15 @@
    opacity: 0.2;
 }
 
-.selected {
+.selected,.none{
    box-shadow: 0px 2px 11px rgba(0, 0, 0, 0.5);
+}
+
+.selected {
    background-color: #4A4A4A;
 }
 
 .none {
    border: none;
-   box-shadow: 0px 2px 11px rgba(0, 0, 0, 0.5);
    background-color: #858585;
 }
