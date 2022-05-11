@@ -1,4 +1,3 @@
-import './styles.css';
 import Header from '../../shared/Header';
 import Content from './components/Content';
 

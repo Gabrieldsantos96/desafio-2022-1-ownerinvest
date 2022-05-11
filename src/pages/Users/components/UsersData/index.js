@@ -1,4 +1,3 @@
-import './styles.css';
 import Api from '../../../../services/api';
 import useData from '../../../../hooks/useData';
 import { useEffect } from 'react';
