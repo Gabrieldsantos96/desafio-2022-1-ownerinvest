@@ -1,4 +1,5 @@
 * {
+  
   color: white;
   box-sizing: border-box;
   margin: 0;
@@ -8,9 +9,12 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+html {
+  background-color: #0F0F0F;
+}
+
 .container {
   min-height: 100vh;
-  background-color: #0F0F0F;
 }
 
 .content {

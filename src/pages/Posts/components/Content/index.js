@@ -7,7 +7,7 @@ import Post from '../Post';
 
 function PostsData () {
 
-  const {posts,setPosts} = useData();
+  const {posts,setPosts,users,setUsers} = useData();
 
   const [itemsPerPage,setItemsPerPage] = useState(15);
   const [currentPage,setCurrentPage] = useState(0);
@@ -19,13 +19,19 @@ function PostsData () {
   const currentItems =  posts.slice(startIndex,endIndex);
 
   const axiosPosts = async () => {
-    const request = await Api.get('/todos');
-    const { data } = request;
+    const { data } = await Api.get('todos');
     setPosts(data);
-  }
+  };
+
+  const axiosAuthor = async () => {
+  const {data } = await Api.get('users');
+  setUsers(data);
+};
+ 
 
   useEffect(() => {
   axiosPosts();
+  axiosAuthor();
   },[])
 
    return (
@@ -39,15 +45,14 @@ function PostsData () {
     <div>
     <div className='content_title'><h2>Todos os posts</h2></div> 
       <div className='render_data'>
-       
         
       {
       currentItems.map((item,index) => (
-        
-      <Post 
+       <Post 
       key={index}
       item={item}
       currentPage={currentPage}
+      users={users}
       />
 
       ))

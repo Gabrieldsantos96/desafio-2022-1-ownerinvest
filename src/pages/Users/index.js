@@ -1,5 +1,5 @@
 import './styles.css';
-import Header from '../../components/Header';
+import Header from '../../shared/Header';
 import UsersData from './components/UsersData';
 
 function Users () {
