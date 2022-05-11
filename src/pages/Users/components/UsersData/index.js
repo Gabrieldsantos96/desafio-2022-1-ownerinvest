@@ -6,16 +6,6 @@ import Card from '../Card';
 function UsersData () {
 const {users,setUsers} = useData();
 
-   const axiosUsers =  async () => {
-      const request = await Api.get("/users");
-      const { data } = request;
-      setUsers(data);
-   }
-
-useEffect(() => {
-axiosUsers();
-},[])
-
    return (
       <div className="content">
 

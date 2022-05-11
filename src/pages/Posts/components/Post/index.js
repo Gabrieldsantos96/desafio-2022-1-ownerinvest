@@ -3,6 +3,7 @@ import './styles.css';
 function Post ({item,users}) {
 
 const author = users.find((user) => user.id === item.userId);
+console.log(author);
 
    return (
       <div className="post">
