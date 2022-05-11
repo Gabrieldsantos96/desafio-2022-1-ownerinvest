@@ -13,5 +13,5 @@ fotos das pages de x perspectivas:
 # page users, perspectiva pc:
 <img src="https://i.imgur.com/Q9TggGU.png"/>
 
-# page users, perspectiva pc:
+# page users, perspectiva phone:
 <img src="https://i.imgur.com/xOXG5vH.png"/>
