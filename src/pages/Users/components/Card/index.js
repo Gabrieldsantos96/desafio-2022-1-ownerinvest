@@ -15,10 +15,10 @@ function Card ({item}) {
             </div>
          </div>
          <div className='card_info'>
-            <span><strong>E-mail:</strong>{item.email}</span><br></br>
-            <span><strong>Telefone:</strong>{item.phone}</span><br></br>
-            <span><strong>Rua: </strong>{item.address.street}</span><br></br>
-            <span><strong>Cidade: </strong>{item.address.city}</span><br></br>      
+            <span><strong>E-mail:</strong>{item.email}</span>
+            <span><strong>Telefone:</strong>{item.phone}</span>
+            <span><strong>Rua: </strong>{item.address.street}</span>
+            <span><strong>Cidade: </strong>{item.address.city}</span>    
          </div>
          <button>Ver mais</button>
 

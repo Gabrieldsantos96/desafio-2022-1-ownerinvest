@@ -50,13 +50,15 @@
 .card_info {
    display: flex;
    flex-direction: column;
+   gap:11px;
 }
 
 .card button {
+   cursor: pointer;
    border: none;
    width: 207px;
    height: 32px;
-
+   margin-top: 32px;
    background: #3D6CB9;
    border-radius: 5px;
 }
